@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My fawry wallet</title>
+		<link rel="stylesheet" type="text/css" href="style/stylecompare.css">
+		<script type="text/javascript" src="js/canvasjs.min.js"></script>
+		<script src="js/chart.js"></script>
+
+
+		<script type="text/javascript">
+	window.onload = function () {
+	var chartleft = new CanvasJS.Chart("chartContainerleft",
+	{
+		title:{
+			text: "Percentage of users who rated 5 on each attribute of iPhone6s",
+			fontFamily: "Impact",
+			fontWeight: "normal"
+		},
+
+		legend:{
+			verticalAlign: "bottom",
+			horizontalAlign: "center"
+		},
+		data: [
+		{
+			//startAngle: 45,
+			indexLabelFontSize: 20,
+			indexLabelFontFamily: "Garamond",
+			indexLabelFontColor: "darkgrey",
+			indexLabelLineColor: "darkgrey",
+			indexLabelPlacement: "outside",
+			type: "doughnut",
+			showInLegend: true,
+			dataPoints: [
+				{  y: 53.37, legendText:"Battery life 53%", indexLabel: "Battery life 53%" },
+				{  y: 35.0, legendText:"Camera Quality 35%", indexLabel: "Camera Quality 35%" },
+				{  y: 7, legendText:"Screen protection 7%", indexLabel: "Screen protection 7%" },
+				{  y: 2, legendText:"Stylus 2%", indexLabel: "Stylus 2%" },
+				{  y: 5, legendText:"Other attribute 5%", indexLabel: "Other attribute 5%" }
+			]
+		}
+		]
+	});
+
+
+	var chartright = new CanvasJS.Chart("chartContainerright",
+	{
+		title:{
+			text: "Percentage of users who rated 5 on each attribute of iPhone5",
+			fontFamily: "Impact",
+			fontWeight: "normal"
+		},
+
+		legend:{
+			verticalAlign: "bottom",
+			horizontalAlign: "center"
+		},
+		data: [
+		{
+			//startAngle: 45,
+			indexLabelFontSize: 20,
+			indexLabelFontFamily: "Garamond",
+			indexLabelFontColor: "darkgrey",
+			indexLabelLineColor: "darkgrey",
+			indexLabelPlacement: "outside",
+			type: "doughnut",
+			showInLegend: true,
+			dataPoints: [
+				{  y: 33.37, legendText:"Battery life 33%", indexLabel: "Battery life 33%" },
+				{  y: 15.0, legendText:"Camera Quality 35%", indexLabel: "Camera Quality 15%" },
+				{  y: 9, legendText:"Screen protection 9%", indexLabel: "Screen protection 9%" },
+				{  y: 12, legendText:"Stylus 12%", indexLabel: "Stylus 12%" },
+				{  y: 11, legendText:"Other attribute 11%", indexLabel: "Other attribute 11%" }
+			]
+		}
+		]
+	});
+
+
+		var chartmiddle = new CanvasJS.Chart("chartContainermiddle",
+	{
+		animationEnabled: true,
+      	theme: "theme2",
+		title:{
+			text: "Sales data (x) of iPhone6s (DataSeries 1) and iPhone5 (DataSeries 2) for past 90 days (y)"
+		},
+      	axisY:[{
+          lineColor: "#4F81BC",
+          tickColor: "#4F81BC",
+          labelFontColor: "#4F81BC",
+          titleFontColor: "#4F81BC",
+          lineThickness: 2,
+      	},
+        {
+          lineColor: "#C0504E",
+          tickColor: "#C0504E",
+          labelFontColor: "#C0504E",
+          titleFontColor: "#C0504E",
+          lineThickness: 2,
+          
+      	}],
+		data: [
+		{
+			type: "spline", //change type to bar, line, area, pie, etc
+			showInLegend: true,        
+			dataPoints: [
+				{ x: 10, y: 51 },
+				{ x: 20, y: 45},
+				{ x: 30, y: 50 },
+				{ x: 40, y: 62 },
+				{ x: 50, y: 95 },
+				{ x: 60, y: 66 },
+				{ x: 70, y: 24 },
+				{ x: 80, y: 32 },
+				{ x: 90, y: 16}
+			]
+			},
+			{
+			type: "spline",
+                        axisYIndex: 1,
+			showInLegend: true,            
+			dataPoints: [
+				{ x: 10, y: 201 },
+				{ x: 20, y: 404},
+				{ x: 30, y: 305 },
+				{ x: 40, y: 405 },
+				{ x: 50, y: 905 },
+				{ x: 60, y: 508 },
+				{ x: 70, y: 108 },
+				{ x: 80, y: 300 },
+				{ x: 90, y: 101}
+			]
+			}
+		],
+		legend: {
+			cursor: "pointer",
+			itemclick: function (e) {
+				if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+					e.dataSeries.visible = false;
+				} else {
+					e.dataSeries.visible = true;
+			}
+			chart.render();
+			}
+		}
+	});
+
+	chartleft.render();
+	chartright.render();
+	chartmiddle.render();
+}
+</script>
+
+
+
+	
+		<ul>
+  			<li><a href="#contact">Contact</a></li>
+  			<li><a href="#FAQ">FAQ</a></li>			
+			<li><a href="#about">About</a></li>
+  			<li><a href="index.html">Home</a></li>
+			<img id="logo" src="img/logo.png" alt="My test image">
+		</ul>
+		
+	</head>
+	<body>
+		
+		<div class="topFirst">
+			<div class="topLeft" id="chartContainerleft" style="float:left; height: 90%; width: 50%;"></div>
+			<div class="topRight"id="chartContainerright" style="float:right; height: 90%; width: 50%;"></div>
+		</div>
+		
+		<div class="topMiddle">
+				<div class="insertRight"></div>
+				<div class="insertChart" id="chartContainermiddle" style="float: left; height: 100%; width: 50%;"></div>
+				<div class="inserRightt"></div>
+		</div>
+		<div class="topSecond">
+			<div class="middleLeft">
+				<div class="upl"><img id="i6s" src="img/i6s.jpg" alt="iphone6s image"></div>
+				<div class="midl"><p>iPhone6s</p></div>
+				<div class="downl"><label><input type="checkbox"/> Add to cart</label></div>
+			</div>
+			<div class="middleRight">
+				<div class="upr"><img id="i5" src="img/iphone5.jpg" alt="iphone5 image"></div>
+				<div class="midr"><p>iPhone5</p></div>
+				<div class="downr"><label><input type="checkbox" onclick="redirect();"/> Add to cart</label></div>
+			</div>
+		</div>   
+			
+		</div>    
+	</body>
+</html>
