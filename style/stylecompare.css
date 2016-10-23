@@ -1,0 +1,176 @@
+body{
+	background-color: white;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    	display: block;
+    	color: black;
+    	padding: 24px 56px;
+    	text-decoration: none;
+    	font-weight: bold;
+}
+
+a:hover:not(.active) {
+    	background-color: #B2B2D8;
+}
+
+
+#logo {
+    	float: left;
+    	width: 10%;
+    	height: 5%;
+}
+
+* {
+    margin: 0; padding: 0;
+}
+
+*{margin:0; padding:0;}
+html, body {
+    	height: 99%;
+    	width:100%;
+    	overflow:hidden;
+}
+div {
+    	display: block;
+}
+.topFirst{
+    	height:35%;
+    	width:100%;
+    	background-color:white;
+}
+
+.topLeft{
+    	float:left;
+    	height:100%;
+    	width:50%;
+    	background-color:white;
+}
+
+.topRight{
+    	float:right;
+    	height:100%;
+    	width:50%;
+    	background-color:white;
+}
+
+
+.topMiddle{
+    	height:25%;
+    	width:100%;
+    	background-color:white;
+}
+
+.insertRight{
+	height: 100%;
+	width: 25%;
+	float: left;
+}
+
+.topSecond{
+	height:40%;
+	width: 100%;
+	background-color:white;
+}
+
+
+.middleLeft{
+	float:left;
+    	height:100%;
+    	width:50%;
+    	background-color:white;
+}
+
+
+.upl{
+	margin-left:25%; 
+	height: 40%;
+	width: 100%;
+	background-color:white;
+}
+
+.midl{
+	margin-left:50%; 
+	height: 10%;
+	width: 100%;
+	background-color:white;
+}
+
+.downl{
+	margin-left: 50%;
+	height: 55%;
+	width: 100%;
+    	background-color:white;
+
+}
+
+#i6s {
+      
+    width: 50%;
+    height: 95%;
+}
+
+.i6s p{
+	
+	font-weight: bold;
+}
+
+
+.middleRight{
+	float:right;
+    	height:100%;
+    	width:50%;
+    	background-color:white;
+}
+
+
+.upr{
+	margin-left:25%; 
+	height: 40%;
+	width: 100%;
+	background-color:white;
+}
+
+.midr{
+	margin-left:30%; 
+	height: 10%;
+	width: 100%;
+	background-color:white;
+}
+
+.downr{
+	margin-left: 30%;
+	height: 50%;
+	width: 100%;
+    	background-color:white;
+
+}
+
+#i5 {
+      
+    width: 20%;
+    height: 95%;
+}
+
+.i5 p{
+	
+	font-weight: bold;
+}
+
+
+
+
+
+

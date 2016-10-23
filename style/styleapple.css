@@ -1,0 +1,426 @@
+body{
+	background-color: white;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 24px 56px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover:not(.active) {
+    background-color: #B2B2D8;
+}
+
+
+#logo {
+    float: left;
+    width: 10%;
+    height: 10%;
+}
+
+* {
+    margin: 0; padding: 0;
+}
+
+*{margin:0; padding:0;}
+html, body {
+    height: 99%;
+    width:100%;
+    overflow:hidden;
+}
+div {
+    display: block;
+}
+.topFirst{
+    height:25%;
+    width:100%;
+    background-color:white;
+    overflow:hidden;
+}
+
+.topFirst p{
+
+	color: #000080;
+	font-size: 36px;
+	text-align: center; 
+	font-weight: bold;
+}
+
+
+.container-1{
+  	position: relative;
+	margin-top: 70px;
+	margin-left: 20%;
+	margin-bottom: auto;
+	margin-right: auto;
+	border: 10px;
+ 	vertical-align: middle;
+ 	white-space: nowrap;
+}
+
+
+.container-1 input#search{
+ 	 width: 80%;
+ 	 height: 80px;
+  	background: white;  
+	border-style: solid;
+  	font-size: 40pt;
+  	float: left;
+  	color: #63717f;
+  	padding-left: 45px;
+  	-webkit-border-radius: 5px;
+ 	 -moz-border-radius: 5px;
+ 	 border-radius: 5px;
+}
+
+
+.topSecond{
+    height:40%;
+    width:100%;
+    background-color:white;
+}
+
+.sr1{
+    height: 100%;
+    width: 20%;
+    float: left;
+    background-color:white;
+    
+  }
+
+
+.sr2{
+    
+    height: 100%;
+    width: 60%;
+    float: left; 
+    white-space:nowrap;
+    overflow-x: auto;
+  }
+
+
+.sr11{
+    width: 25%;
+    height:90%;
+    background-color: white;
+    margin:10px;
+    display:inline-block;
+    
+}
+
+
+.sr111{
+    height: 50%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+  .sr112{
+    height: 10%;
+    width: 100%;
+    float: left;
+    background-color:white;
+    text-align: center;
+  }
+
+
+
+#i7 {   
+    width: 100%;
+    height: 95%;
+}
+
+.i7 p{
+	
+	font-weight: bold;
+}
+
+
+
+
+
+.sr113{
+    height: 15%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+
+
+
+
+.sr114{
+    height: 25%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+
+.rating {
+    float:left;
+	margin-left: 20%;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:150%;
+    
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+
+
+
+
+.sr211{
+    height: 50%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+  .sr212{
+    height: 10%;
+    width: 100%;
+    float: left;
+    background-color:white;
+    text-align: center;
+  }
+
+
+
+#i6s {   
+    width: 100%;
+    height: 95%;
+}
+
+.i6s p{
+	
+	font-weight: bold;
+}
+
+
+
+
+
+.sr213{
+    height: 15%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+.sr214{
+    height: 25%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    margin-left: 30%;
+    bottom: 1px;
+}
+
+.sr311{
+    height: 50%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+
+.sr312{
+    height: 10%;
+    width: 100%;
+    float: left;
+    background-color:white;
+    text-align: center;
+  }
+
+
+
+#i5 {   
+    width: 90%;
+    height: 95%;
+}
+
+.i5 p{
+	
+	font-weight: bold;
+}
+
+.sr313{
+    height: 15%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+.sr314{
+    height: 25%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+
+
+.sr411{
+    height: 50%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+
+.sr412{
+    height: 10%;
+    width: 100%;
+    float: left;
+    background-color:white;
+    text-align: center;
+  }
+
+
+
+#ise {   
+    width: 70%;
+    height: 95%;
+}
+
+.ise p{
+	
+	font-weight: bold;
+}
+
+.sr413{
+    height: 15%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+.sr414{
+    height: 25%;
+    width: 100%;
+    float: left;
+    background-color:white;
+  }
+
+
+
+
+
+.sr3{
+    height: 100%;
+    width: 20%;
+    float: left;
+    background-color:white;
+  
+  }
+
+
+
+
+.topThird{
+    margin-top:1%;
+    height:35%;
+    width:100%;
+    
+}
+.srLeft{
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color:white;
+  }
+
+#logo2{
+	height: 50%;
+	width: 50%;
+}
+
+.srMiddle{
+    height: 100%;
+    width: 15%;
+    float: left;
+    background-color:white;
+  }
+  .srRight{
+    height: 100%;
+    width: 35%;
+    float: left;
+    background-color:white;
+  }
+

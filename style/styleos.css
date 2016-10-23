@@ -1,0 +1,208 @@
+body{
+	background-color: white;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 24px 56px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover:not(.active) {
+    background-color: #B2B2D8;
+}
+
+
+#logo {
+    float: left;
+    width: 10%;
+    height: 10%;
+}
+
+* {
+    margin: 0; padding: 0;
+}
+
+*{margin:0; padding:0;}
+html, body {
+    height: 99%;
+    width:100%;
+    overflow:hidden;
+}
+div {
+    display: block;
+}
+.topFirst{
+    height:25%;
+    width:100%;
+    background-color:white;
+    overflow:hidden;
+}
+
+.topFirst p{
+
+	color: #000080;
+	font-size: 36px;
+	text-align: center; 
+	font-weight: bold;
+}
+
+
+.container-1{
+  	position: relative;
+	margin-top: 70px;
+	margin-left: 20%;
+	margin-bottom: auto;
+	margin-right: auto;
+	border: 10px;
+ 	vertical-align: middle;
+ 	white-space: nowrap;
+}
+
+
+.container-1 input#search{
+ 	 width: 80%;
+ 	 height: 80px;
+  	background: white;  
+	border-style: solid;
+  	font-size: 40pt;
+  	float: left;
+  	color: #63717f;
+  	padding-left: 45px;
+  	-webkit-border-radius: 5px;
+ 	 -moz-border-radius: 5px;
+ 	 border-radius: 5px;
+}
+
+
+.topSecond{
+    height:40%;
+    width:100%;
+    background-color:yellow;
+}
+
+.sr1{
+    height: 100%;
+    width: 33.33%;
+    float: left;
+    background-color:white;
+    
+  }
+
+#android {
+	margin-left: 60%;
+    	width: 40%;
+   	height: 50%;
+	
+}
+
+
+.sr1 p{
+	
+	margin-left: 80%;
+	font-size: 20px;
+	color: blue;
+	font-weight: bold;
+	cursor:	pointer;
+}
+
+
+
+.sr2{
+    height: 100%;
+    width: 23.33%;
+    float: left;
+    background-color:	white;
+  
+  }
+
+#apple { 
+	margin-left: 20%;  
+    	width: 60%;
+    	height: 50%;
+	
+}
+
+
+.sr2 p{
+	margin-top: 2%;
+	margin-left: 40%;
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+	cursor:	pointer;
+}
+
+.sr3{
+    height: 100%;
+    width: 43.33%;
+    float: left;
+    background-color:white;
+  
+  }
+
+#windows { 
+	margin-left: 0%;  
+    	width: 40%;
+    	height: 50%;
+	
+}
+
+
+.sr3 p{
+	margin-top: 2%;
+	margin-left: 15%;
+	font-size: 20px;
+	color: green;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+
+
+
+
+.topThird{
+    height:35%;
+    width:100%;
+    
+}
+.srLeft{
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color:white;
+  }
+
+#logo2{
+	height: 50%;
+	width: 50%;
+}
+
+.srMiddle{
+    height: 100%;
+    width: 15%;
+    float: left;
+    background-color:white;
+  }
+  .srRight{
+    height: 100%;
+    width: 35%;
+    float: left;
+    background-color:white;
+  }
+
